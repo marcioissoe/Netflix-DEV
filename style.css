@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 20px; /* Descolar o logo |NETFLIX do top da pagina */
+}
+
+
+ul {
+    height: 25px;
+    width: 95%; /* Largura */
+    display: flex; /* O item/objeto fica um lado do outro  */
+    justify-content: space-between; /* Alinhamento dos item/objeto */
+    list-style: none; /* retira os pontos da UL do CSS */
+    position: fixed; /* mantem fixo as imagens no rolar da pagina */
+}
+
+.img-topo{
+    height: 25px; /* Altura */
+}
+
+
+video{
+    width: 100vw; /* Largura */
+    min-height: 80vh; /* Altura */
+}
+
+.capa{
+    position: absolute;
+    bottom: 20%; /* TOP=CIMA / BOTTOM=BAIXO / LEFT=ESQUERDA / RIGHT=DIREITA*/
+    left: 5%;
+    width: 35%;
+}
+
+.capa-titulo{
+    color: white;
+    font-size: 60px;
+    margin-bottom: 5px;
+    font-weight: bold; /* Grossura da fonte*/
+}
+
+.capa-descricao{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 90px;
+}
+
+.link-assistir{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;  /* 10=em cima e 20=lateral*/
+    border-radius: 4; /* arredondar os cantos*/
+    cursor: pointer; /* Adicionar maozinha ao clicar no link/botao*/
+    
+}
+
+.link-info{
+    background-color: rgba(255,255, 255, 0.35);
+    color: black;
+    padding: 10px 20px;  /* 10=em cima e 20=lateral*/
+    border-radius: 4; /* arredondar os cantos*/
+    cursor: pointer; /* Adicionar maozinha ao clicar no link/botao*/
+    
+}
+
+.imagem-carrosel{
+    height: 150px;
+}
+
+/* Quando utilizar ID necessario colocar "# + nomeID"*/
+#carouselExampleControls{
+    background-color: transparent;
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.titulo-carrossel{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.botao-som{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4px;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+}
+
+.botao-mute{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4px;
+    position: absolute;
+    top: 130px;
+    right: 20px;
+}
+
+.modal{
+    display: none;
+    /* display como BLOCK - aparece fixo na tela
+    display como NONE - aparece na tela
+    */
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, 0.8);
+}
+
+.modal-conteudo{
+    background-color: #181818;
+    margin: 30px auto; /* aplica 30=em cima e auto=lateral referente a margem(auto=coloca no meio/centraliza)*/
+    padding: 20px;
+    width: 60%;
+    color: white;
+
+}
